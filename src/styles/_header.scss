@@ -1,0 +1,87 @@
+.header {
+  padding: 1.5rem 0;
+  text-align: center;
+  background: var(--background);
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-image: none !important;
+  box-shadow: 0 12px 35px 20px var(--background) !important;
+
+  &-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-title {
+    font-size: 1.75rem;
+    font-family: 'Gloock', serif;
+
+    a {
+      color: var(--color-header-title)
+    }
+  }
+
+  &-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-header-subtitle)
+  }
+
+  &-bars {
+    left: 2rem;
+
+    // See _switch.scss
+    &::before {
+      pointer-events: var(--switch-bars, none);
+      opacity: var(--switch-bars, 0);
+    }
+  }
+
+  &-search {
+    right: 2rem;
+
+    &::before {
+      pointer-events: var(--switch-search, none);
+      opacity: var(--switch-search, 0);
+    }
+  }
+
+  // No auto ads on header
+  .google-auto-placed {
+    display: none !important
+  }
+}
+
+.links {
+  // Comportamiento por defecto: vertical (footer)
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+
+  // Cuando está en el header: horizontal
+  &-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &-title {
+    font-size: .9375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    margin-bottom: .5rem;
+  }
+
+  &-link {
+    display: block;
+    padding: .35rem 0;
+    color: var(--s-t-color);
+    transition: color .2s ease;
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}

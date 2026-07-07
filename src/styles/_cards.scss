@@ -1,0 +1,125 @@
+// Container for the cards
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  gap: 1rem;
+}
+
+// Individual card
+.card {
+  background-color: var(--surface);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-decoration: none;
+  overflow: hidden;
+  padding-bottom: 0.5rem;
+  transition: filter 0.3s ease, transform 0.3s ease;
+
+  // Hover effect for the card
+  &:hover {
+    filter: brightness(0.92);
+  }
+
+  // Content of the card
+  &-content {
+    position: relative;
+    display: inline-block;
+  }
+
+  &-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 30px;
+    background-color: var(--surface);
+  }
+
+  &-meta {
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    background: var(--card-body-bg, transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  &-title {
+    font-family: 'Gloock', serif;
+    color: var(--m-t-color);
+    font-size: 1.45rem;
+    font-weight: 400;
+  }
+
+  &-snippet {
+    color: var(--s-t-color);
+    margin-top: 1rem;
+    opacity: .75;
+  }
+
+  &-category {
+    padding: 5px 10px 5px 10px;
+    background-color: var(--background);
+    width: max-content;
+    font-family: var(--font-body);
+    font-weight: 600;
+    color: var(--s-m-t-color);
+    text-transform: uppercase;
+    border-radius: 10px;
+  }
+
+  &-date {
+    font-family: var(--font-body);
+    font-weight: 600;
+    color: var(--s-m-t-color);
+    text-transform: uppercase;
+  }
+}
+
+.card-author-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.card-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 20%;
+  object-fit: cover;
+}
+
+.card-author-name {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--s-t-color);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between; /* Envía la categoría a la izquierda y la fecha a la derecha */
+  align-items: center;            /* Alinea verticalmente ambos textos para que queden centrados */
+  margin-top: 1.5rem;             /* Le da una separación limpia respecto al extracto (snippet) */
+  width: 100%;                    /* Asegura que ocupe todo el ancho disponible */
+}
+
+.card-check {
+  font-size: 10.2rem; 
+  width: 20px;
+  height: 20px;
+  color: var(--primary);
+}
+
+.card-author-name {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+}
+
+.card-check {
+  color: var(--primary); // o cualquier azul específico, ej: #1d9bf0
+  flex-shrink: 0;
+}

@@ -1,0 +1,72 @@
+.sidebar {
+  // See _switch.scss
+  transform: translateX(var(--switch-sidebar-position, -100%));
+
+  // Sidebar Styles
+  transition: transform var(--transition-config);
+  position: fixed;
+  width: var(--sidebar-width);
+  background-color: var(--background);
+  inset: 0;
+  z-index: 1000;
+  padding: var(--sidebar-gap);
+  overflow-y: auto;
+
+  > * + * {
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--sidebar-gap);
+    margin-top: var(--sidebar-gap);
+  }
+}
+
+.pages-link {
+  gap: 10rem;
+}
+
+.pages-link {
+  display: inline-flex;
+  align-items: left;
+  gap: 1rem; // espacio entre el ícono y el texto
+}
+
+.pages-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform .2s ease, color .2s ease;
+
+  &:hover {
+    transform: translateX(.5rem);
+    color: var(--primary);
+  }
+}
+
+.pages-link.has-submenu {
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.submenu-arrow {
+  margin-left: auto;
+  transition: transform .2s ease;
+}
+
+.pages-link.is-open .submenu-arrow {
+  transform: rotate(180deg);
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  max-height: 0;
+  overflow: hidden;
+  margin-left: .65rem; // alinea la línea con el centro del ícono del padre
+  padding-left: 1rem;
+  border-left: 2px solid var(--surface); // la línea vertical
+  transition: max-height .3s ease;
+
+  &.is-open {
+    max-height: 500px;
+  }
+}

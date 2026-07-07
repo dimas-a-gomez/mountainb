@@ -1,0 +1,36 @@
+{{!--
+Partial: Footer content
+@author zkreations
+--}}
+<div class='footer-inner'>
+
+  {{!-- 1. Logo + descripción --}}
+  <div class='footer-logo-block'>
+    <b:if cond='data:skin.vars.c_footerLogo'>
+      <a class='footer-logo' expr:href='data:blog.homepageUrl'>
+        <img expr:alt='data:blog.title' expr:src='data:skin.vars.c_footerLogo'/>
+      </a>
+    <b:else/>
+      <div class='footer-title'>
+        <a expr:href='data:blog.homepageUrl'>
+          <data:blog.title/>
+        </a>
+      </div>
+    </b:if>
+    <b:if cond='data:skin.vars.c_footerDescription'>
+      <p class='footer-description'><data:skin.vars.c_footerDescription/></p>
+    </b:if>
+  </div>
+
+  <hr class="footer-hr" />
+
+  {{!-- 2. Columnas de enlaces (Legales, Contacto, Redes...) --}}
+  <b:section id='footer-links' class='footer-links' showaddelement='yes'>
+  </b:section>
+
+  {{!-- 3. Copyright --}}
+  <div class='footer-copyright'>
+    Copyright {{currentYear}} <data:blog.title/>. Powered by Blogger
+  </div>
+
+</div>

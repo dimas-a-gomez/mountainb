@@ -1,0 +1,74 @@
+.footer {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2.5rem;
+  background-color: var(--surface); // aquí sí se ve el color completo, de borde a borde
+
+  &-inner {
+    max-width: 900px; // o el mismo max-width que uses en .container
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 2rem 2rem;
+    text-align: center;
+  }
+
+  &-logo-block {
+    margin-bottom: 2.5rem;
+  }
+
+  &-logo {
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  &-title {
+    font-size: 1.5rem;
+    font-family: 'Gloock', serif;
+
+    a {
+      color: var(--color-header-title);
+    }
+  }
+
+  &-description {
+    margin-top: .5rem;
+    font-size: .9375rem;
+    color: var(--s-t-color);
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 3rem; // espacio vertical, espacio horizontal entre columnas
+    text-align: left;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-border);
+
+    @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  }
+
+  &-copyright {
+    font-size: .875rem;
+    color: var(--s-t-color);
+  }
+}
+
+.footer-wrapper {
+  background: var(--surface);
+  padding: 2rem 0;
+}
+
+.footer-hr {
+  border: none;
+  border-top: 1px solid var(--background);
+  margin: 2rem auto;
+  width: 100%;
+}
