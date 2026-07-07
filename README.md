@@ -8,7 +8,7 @@ MountainB es un framework de diseño profesional para Blogger, optimizado para v
 
 Si solo deseas utilizar el tema en tu blog sin realizar modificaciones al código:
 
-1. Navega a la carpeta [`dist/`](https://www.google.com/search?q=dist/).
+1. Navega a la carpeta [`dist/`](https://github.com/dimas-a-gomez/mountainb/tree/main/dist).
 2. Descarga el archivo [`mountainb.xml`](https://www.google.com/search?q=dist/mountainb.xml).
 3. En tu panel de Blogger, ve a **Tema > Restaurar** y sube este archivo.
 
