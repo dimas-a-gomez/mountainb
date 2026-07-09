@@ -32,4 +32,4 @@ Este proyecto está bajo la [Licencia MIT](https://github.com/dimas-a-gomez/moun
 
 ---
 
-*MicroTecN Engines - Construyendo el futuro de Blogger.*
+*MicroTecN Engines*
