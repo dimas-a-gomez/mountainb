@@ -52,7 +52,7 @@
     color: var(--s-t-color);
 
       img {
-      border-radius: 1rem; // ajusta el valor a tu gusto
+      border-radius: 1rem;
       display: block;
       margin-top: 1.5rem;
       margin-bottom: 1.5rem;
@@ -111,7 +111,7 @@
   &-date {
     margin-top: .125rem;
     font-size: .8125rem;
-    color: var(--s-t-color); // o el color secundario que ya uses para texto tenue
+    color: var(--s-t-color);
     text-transform: capitalize;
   }
 }
@@ -157,7 +157,7 @@ hr {
 }
 
 .i-badge-check {
-  color: var(--primary); // o cualquier azul específico, ej: #1d9bf0
+  color: var(--primary);
   flex-shrink: 0;
   width: 20px;
   height: 20px;
