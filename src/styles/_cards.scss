@@ -100,10 +100,10 @@
 
 .card-footer {
   display: flex;
-  justify-content: space-between; /* Envía la categoría a la izquierda y la fecha a la derecha */
-  align-items: center;            /* Alinea verticalmente ambos textos para que queden centrados */
-  margin-top: 1.5rem;             /* Le da una separación limpia respecto al extracto (snippet) */
-  width: 100%;                    /* Asegura que ocupe todo el ancho disponible */
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 100%;
 }
 
 .card-check {
@@ -120,6 +120,6 @@
 }
 
 .card-check {
-  color: var(--primary); // o cualquier azul específico, ej: #1d9bf0
+  color: var(--primary);
   flex-shrink: 0;
 }
