@@ -4,10 +4,10 @@
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: 2.5rem;
-  background-color: var(--surface); // aquí sí se ve el color completo, de borde a borde
+  background-color: var(--surface);
 
   &-inner {
-    max-width: 900px; // o el mismo max-width que uses en .container
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     padding: 3rem 2rem 2rem;
@@ -44,7 +44,7 @@
   &-links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem 3rem; // espacio vertical, espacio horizontal entre columnas
+    gap: 2rem 3rem;
     text-align: left;
     margin-bottom: 2.5rem;
     padding-bottom: 2rem;
