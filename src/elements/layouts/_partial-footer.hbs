@@ -4,7 +4,7 @@ Partial: Footer content
 --}}
 <div class='footer-inner'>
 
-  {{!-- 1. Logo + descripción --}}
+  {{!-- Logo + description --}}
   <div class='footer-logo-block'>
     <b:if cond='data:skin.vars.c_footerLogo'>
       <a class='footer-logo' expr:href='data:blog.homepageUrl'>
@@ -24,13 +24,13 @@ Partial: Footer content
 
   <hr class="footer-hr" />
 
-  {{!-- 2. Columnas de enlaces (Legales, Contacto, Redes...) --}}
+  {{!-- Link columns --}}
   <b:section id='footer-links' class='footer-links' showaddelement='yes'>
   </b:section>
 
-  {{!-- 3. Copyright --}}
+  {{!-- Copyright --}}
   <div class='footer-copyright'>
-    Copyright {{currentYear}} <data:blog.title/>. Powered by Blogger
+    Copyright {{currentYear}} <data:blog.title/>. <a href="https://github.com/zkreations/hamlet">made with Hamlet</a> - Powered by Blogger.
   </div>
 
 </div>
