@@ -42,7 +42,7 @@
     }
 }
 
-/* --- Tipografía y Textos --- */
+// Typography and Text
 
 .m-hero-title {
     font-family: var(--font-title-family, 'Gloock', serif);
@@ -53,7 +53,7 @@
     max-width: 900px;
     
     a {
-        color: var(--m-t-color) !important; /* Blindaje contra el azul del tema */
+        color: var(--m-t-color) !important;
         text-decoration: none !important;
         background: transparent !important;
     }
