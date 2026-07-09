@@ -26,7 +26,7 @@
 .pages-link {
   display: inline-flex;
   align-items: left;
-  gap: 1rem; // espacio entre el ícono y el texto
+  gap: 1rem;
 }
 
 .pages-link {
@@ -61,9 +61,9 @@
   gap: .5rem;
   max-height: 0;
   overflow: hidden;
-  margin-left: .65rem; // alinea la línea con el centro del ícono del padre
+  margin-left: .65rem;
   padding-left: 1rem;
-  border-left: 2px solid var(--surface); // la línea vertical
+  border-left: 2px solid var(--surface);
   transition: max-height .3s ease;
 
   &.is-open {
