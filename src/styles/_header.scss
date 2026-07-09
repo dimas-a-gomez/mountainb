@@ -54,12 +54,10 @@
 }
 
 .links {
-  // Comportamiento por defecto: vertical (footer)
   display: flex;
   flex-direction: column;
   gap: .35rem;
 
-  // Cuando está en el header: horizontal
   &-header {
     flex-direction: row;
     align-items: center;
