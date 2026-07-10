@@ -1,12 +1,11 @@
-/* Shortcodes Styles */
+// Shortcodes Styles
 
-/* == Botón de descarga == */
-/* Contenedor del botón */
+/* == Download button == */
 .mt-download-container { 
     text-align: left;
 }
 
-/* Botón principal */
+/* Main button */
 .btn-mountainb { 
     display: inline-flex; 
     align-items: center; 
@@ -28,7 +27,6 @@
     }
 }
 
-/* Iconos o SVGs dentro del botón */
 .btn-mountainb i, .btn-mountainb svg.i { 
     font-size: 1.2rem; 
     width: 20px;
@@ -36,7 +34,7 @@
     color: var(--s-t-color);
 }
 
-/* == Cita == */
+/* == Quote == */
 .mt-quote-free {
     margin: 50px auto;
     padding: 0;
@@ -48,7 +46,7 @@
     display: block;
 }
 
-/* Soporte tanto para etiqueta <i> como para el SVG con clase .i o .i-quote-left */
+/* Support for both the <i> tag and SVG with the class .i or .i-quote-left. */
 .mt-quote-free i,
 .mt-quote-free .i,
 .mt-quote-free svg {
@@ -83,7 +81,7 @@
     padding-top: 1rem;
 }
 
-/* == ENLACE == */
+/* == LINK == */
 .mt-link-inline { 
     display: inline-flex;
     align-items: center;
@@ -95,7 +93,6 @@
     border-bottom: 1px solid transparent;
 }
 
-/* Selector para el icono (SVG o i) */
 .mt-link-inline svg,
 .mt-link-inline i { 
     width: 20px;
@@ -104,7 +101,6 @@
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Efecto Hover (Modo Claro) */
 .mt-link-inline:hover { 
     color: var(--s-t-color);
     border-bottom-color: var(--s-t-color);
@@ -112,11 +108,11 @@
 
 .mt-link-inline:hover svg,
 .mt-link-inline:hover i { 
-    transform: translate(1px, -1px) !important; /* Desplazamiento hacia la esquina superior derecha */
+    transform: translate(1px, -1px) !important;
     color: var(--s-t-color);
 }
 
-/* == NOTA == */
+/* == NOTE == */
 .mt-note { 
     margin: 25px 0;
     padding: 20px 25px;
@@ -128,7 +124,7 @@
     font-family: 'Inter', sans-serif;
 }
 
-/* Icono informativo */
+/* Information icon */
 .mt-note i, 
 .mt-note .mt-info { 
     color: var(--primary);
@@ -137,7 +133,7 @@
     flex-shrink: 0; 
 }
 
-/* Contenido de la nota */
+/* Note content */
 .mt-note-content { 
     font-size: 0.95rem;
     color: var(--s-t-color);
@@ -145,156 +141,95 @@
     margin: 0;
 }
 
-/* Negrita dentro de la nota */
+/* Bold text within the note */
 .mt-note-content b, 
 .mt-note-content strong { 
     color: var(--m-t-color);
     font-weight: 700; 
 }
 
-/* == ALERTAS (EXPERIMENTAL: NUEVOS) == */
-/* ESTILOS COMUNES PARA TODAS LAS ALERTAS */
+/* == ALERTS (EXPERIMENTAL: NEW) == */
 .mt-alert {
-  margin: 25px 0 !important;
-  padding: 18px 22px !important;
-  border-radius: 16px !important;
-  display: flex !important;
-  gap: 16px !important;
-  align-items: flex-start !important;
-  font-family: 'Inter', sans-serif !important;
-  transition: all 0.3s ease !important;
-  border: 1px solid transparent !important;
+  margin: 25px 0;
+  padding: 18px 22px;
+  border-radius: 16px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
 }
 
-/* Iconos de las Alertas */
+/* Alert Icons */
 .mt-alert-icon {
-  width: 24px !important;
-  height: 24px !important;
-  stroke-width: 2 !important;
-  stroke-linecap: round !important;
-  stroke-linejoin: round !important;
-  fill: none !important;
-  flex-shrink: 0 !important;
-  margin-top: 2px !important;
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  flex-shrink: 0;
+  margin-top: 2px;
 }
 
-/* Contenido de texto */
+/* Text content */
 .mt-alert-content {
-  font-size: 0.95rem !important;
-  line-height: 1.6 !important;
-  margin: 0 !important;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .mt-alert-content b {
-  font-weight: 700 !important;
+  font-weight: 700;
 }
 
-/* ===================================================
-   1. ALERTA SUCCESS (¡BIEN!)
-   =================================================== */
+/* ALERT SUCCESS (¡BIEN!) */
 .mt-alert-success {
-  background-color: #EBFBEE !important; /* Verde pastel suave */
-  border-color: #D3F9D8 !important;
+  background-color: #EBFBEE;
+  border-color: #D3F9D8;
 }
 .mt-alert-success .mt-alert-icon {
-  stroke: #2B8A3E !important; /* Verde vivo */
+  stroke: #2B8A3E;
 }
 .mt-alert-success .mt-alert-content {
-  color: #2B8A3E !important;
+  color: #2B8A3E;
 }
 .mt-alert-success .mt-alert-content b {
-  color: #09340E !important; /* Verde muy oscuro para destacar */
+  color: #09340E;
 }
 
-/* Modo Oscuro: Success */
-.is-dark .mt-alert-success, 
-body.dark-mode .mt-alert-success, 
-[data-theme='dark'] .mt-alert-success {
-  background-color: rgba(43, 138, 62, 0.12) !important; /* Fondo verde translúcido */
-  border-color: rgba(43, 138, 62, 0.3) !important;
-}
-.is-dark .mt-alert-success .mt-alert-content,
-body.dark-mode .mt-alert-success .mt-alert-content,
-[data-theme='dark'] .mt-alert-success .mt-alert-content {
-  color: #D3F9D8 !important; /* Texto verde claro */
-}
-.is-dark .mt-alert-success .mt-alert-content b,
-body.dark-mode .mt-alert-success .mt-alert-content b,
-[data-theme='dark'] .mt-alert-success .mt-alert-content b {
-  color: #FFFFFF !important;
-}
-
-/* ===================================================
-   2. ALERTA DANGER (¡ALERTA!)
-   =================================================== */
+/* 2. ALERT DANGER (¡ALERTA!) */
 .mt-alert-danger {
-  background-color: #FFF5F5 !important; /* Rojo pastel suave */
-  border-color: #FFE3E3 !important;
+  background-color: #FFF5F5;
+  border-color: #FFE3E3;
 }
 .mt-alert-danger .mt-alert-icon {
-  stroke: #E03131 !important; /* Rojo vivo */
+  stroke: #E03131;
 }
 .mt-alert-danger .mt-alert-content {
-  color: #E03131 !important;
+  color: #E03131;
 }
 .mt-alert-danger .mt-alert-content b {
-  color: #5C0E0E !important; /* Rojo oscuro para destacar */
+  color: #5C0E0E;
 }
 
-/* Modo Oscuro: Danger */
-.is-dark .mt-alert-danger, 
-body.dark-mode .mt-alert-danger, 
-[data-theme='dark'] .mt-alert-danger {
-  background-color: rgba(224, 49, 49, 0.12) !important; /* Fondo rojo translúcido */
-  border-color: rgba(224, 49, 49, 0.3) !important;
-}
-.is-dark .mt-alert-danger .mt-alert-content,
-body.dark-mode .mt-alert-danger .mt-alert-content,
-[data-theme='dark'] .mt-alert-danger .mt-alert-content {
-  color: #FFE3E3 !important; /* Texto rojo claro */
-}
-.is-dark .mt-alert-danger .mt-alert-content b,
-body.dark-mode .mt-alert-danger .mt-alert-content b,
-[data-theme='dark'] .mt-alert-danger .mt-alert-content b {
-  color: #FFFFFF !important;
-}
-
-/* ===================================================
-   3. ALERTA WARNING (¡ADVERTENCIA!)
-   =================================================== */
+/* ALERT WARNING (¡ADVERTENCIA!) */
 .mt-alert-warning {
-  background-color: #FFF9DB !important; /* Amarillo/Ámbar pastel suave */
-  border-color: #FFF3BF !important;
+  background-color: #FFF9DB;
+  border-color: #FFF3BF;
 }
 .mt-alert-warning .mt-alert-icon {
-  stroke: #E08107 !important; /* Ámbar/Naranja vivo */
+  stroke: #E08107;
 }
 .mt-alert-warning .mt-alert-content {
-  color: #C16E04 !important;
+  color: #C16E04;
 }
 .mt-alert-warning .mt-alert-content b {
-  color: #5C3200 !important; /* Marrón oscuro para destacar */
+  color: #5C3200;
 }
 
-/* Modo Oscuro: Warning */
-.is-dark .mt-alert-warning, 
-body.dark-mode .mt-alert-warning, 
-[data-theme='dark'] .mt-alert-warning {
-  background-color: rgba(224, 129, 7, 0.12) !important; /* Fondo ámbar translúcido */
-  border-color: rgba(224, 129, 7, 0.3) !important;
-}
-.is-dark .mt-alert-warning .mt-alert-content,
-body.dark-mode .mt-alert-warning .mt-alert-content,
-[data-theme='dark'] .mt-alert-warning .mt-alert-content {
-  color: #FFF3BF !important; /* Texto amarillo claro */
-}
-.is-dark .mt-alert-warning .mt-alert-content b,
-body.dark-mode .mt-alert-warning .mt-alert-content b,
-[data-theme='dark'] .mt-alert-warning .mt-alert-content b {
-  color: #FFFFFF !important;
-}
-
-/* == CAPITALIZACIÓN DE ALERTAS == */
+/* == DROPCAP == */
 .mt-dropcap {
     font-family: 'Inter', sans-serif;
     font-size: 1.1rem;
@@ -314,7 +249,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     transition: color 0.3s ease;
 }
 
-/* == ENTRADAS RECOMENDADAS == */
+/* == RECOMMENDED POSTS == */
 .mt-recommended {
     margin: 30px 0;
     padding: 0 ;
@@ -324,7 +259,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     gap: 12px;
 }
 
-/* Tarjeta individual */
+/* Individual card */
 .mt-blog-card {
     display: flex;
     align-items: center;
@@ -342,7 +277,6 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     }
 }
 
-/* Icono por defecto (si no usa imagen) */
 .mt-blog-icon {
     width: 45px;
     height: 45px;
@@ -363,7 +297,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     color: var(--primary);
 }
 
-/* Miniatura/Imagen heredada (si se usa imagen en vez de icono) */
+/* Thumbnail/Image (if using an image instead of an icon) */
 .mt-blog-img {
     width: 100px;
     height: 100px;
@@ -373,13 +307,13 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     border: 1px solid  var(--background);
 }
 
-/* Contenedor de Textos */
+/* Text Container */
 .mt-blog-info {
     display: flex;
     flex-direction: column;
 }
 
-/* Nombre o Título */
+/* Title */
 .mt-blog-name {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -389,7 +323,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     line-height: 1.2;
 }
 
-/* Descripción */
+/* Description */
 .mt-blog-desc {
     font-family: 'Inter', sans-serif;
     font-size: 0.8rem;
@@ -398,7 +332,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     line-height: 1.4;
 }
 
-/* == RESUMEN DE ENTRADAS == */
+/* == SUMMARY OF ENTRIES == */
 .mt-summary-box {
     margin: 40px 0;
     padding: 30px;
@@ -410,7 +344,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     box-sizing: border-box;
 }
 
-/* Título en Gloock */
+/* Title */
 .mt-summary-title {
     font-family: 'Gloock', serif;
     font-size: 1.5rem;
@@ -422,7 +356,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     gap: 10px;
 }
 
-/* Icono SVG del Título */
+/* SVG icon */
 .mt-summary-title svg {
     width: 24px;
     height: 24px;
@@ -430,7 +364,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     flex-shrink: 0;
 }
 
-/* Contenido / Texto del Resumen */
+/* Content */
 .mt-summary-content {
     font-size: 1rem;
     color: var(--s-t-color);
@@ -443,7 +377,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     color: var(--m-t-color);
 }
 
-/* == CUNCLUSIÓN DE ENTRADAS == */
+/* == CONCLUSION == */
 .mt-summary {
     margin: 40px 0;
     padding: 30px;
@@ -454,7 +388,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     box-sizing: border-box;
 }
 
-/* Título */
+/* Title */
 .mt-summary-title {
     font-family: 'Gloock', serif;
     font-size: 1.8rem;
@@ -465,7 +399,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     gap: 12px;
 }
 
-/* Texto del Contenido */
+/* Content */
 .mt-summary-text {
     font-size: 1.05rem;
     color: var(--s-t-color);
@@ -474,14 +408,14 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     margin: 0;
 }
 
-/* Negritas dentro del texto */
+/* Bold text within the body */
 .mt-summary-text b,
 .mt-summary-text strong {
     color: var(--m-t-color);
     font-weight: 700;
 }
 
-/* == PREGUNTAS FRECUENTES (FAQ) == */
+/* == FAQ == */
 .mt-faq-container {
     margin: 30px 0;
 }
@@ -505,12 +439,12 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     align-items: center;
 }
 
-/* Oculta la flecha nativa del navegador en Webkit/Blink */
+/* Hides the native browser arrow in Webkit/Blink. */
 .mt-faq-item summary::-webkit-details-marker {
     display: none !important;
 }
 
-/* Flecha personalizada del indicador */
+/* Custom indicator arrow */
 .mt-faq-icon {
     color: var(--primary);
     flex-shrink: 0;
@@ -530,7 +464,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     line-height: 1.6;
 }
 
-/* == AUTOR DE ENTRADAS == */
+/* == POST AUTHOR == */
 .mt-author-card {
     margin: 40px 0 20px 0;
     padding: 30px;
@@ -572,7 +506,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     margin: 0 0 15px 0;
 }
 
-/* Redes Sociales */
+/* SOCIAL */
 .mt-author-social {
     display: flex;
     gap: 12px;
@@ -596,18 +530,15 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     }
 }
 
-/* Alineación limpia para los iconos SVG dentro de las redes */
 .mt-author-social a .i {
-    margin-right: 0 !important; /* Quita el margen lateral genérico */
+    margin-right: 0;
     width: 18px;
     height: 18px;
     stroke-width: 2;
     stroke: currentColor;
 }
 
-/* ==========================================================================
-    DISEÑO RESPONSIVO (Dispositivos Móviles)
-========================================================================== */
+/* DISEÑO RESPONSIVO (Dispositivos Móviles) */
 
 @media (max-width: 576px) {
     .mt-author-card {
@@ -620,7 +551,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     }
 }
 
-/* == BLOQUE DE CÓDIGO == */
+/* == CODE BLOCK == */
 .mt-code-wrapper {
     margin: 2rem 0;
     background-color: var(--surface);
@@ -638,7 +569,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     border-bottom: 2px solid var(--background);
 }
 
-/* Puntos estilo macOS */
+/* Header points */
 .mt-code-dots {
     display: flex;
     gap: 8px;
@@ -655,7 +586,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
 .dot-2 { background-color: var(--primary); }
 .dot-3 { background-color: var(--primary); }
 
-/* Etiqueta de lenguaje */
+/* LANGUAGE LABEL */
 .mt-code-lang {
     font-size: 0.75rem;
     color: var(--s-t-color);
@@ -664,7 +595,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     font-weight: 800;
 }
 
-/* Contenido del Código */
+/* CODE CONTEN */
 .mt-code-content {
     padding: 20px;
     margin: 0;
@@ -682,7 +613,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     font-weight: 700;
 }
 
-/* Personalización de barra de desplazamiento sutil */
+/* Subtle scrollbar customization */
 .mt-code-content::-webkit-scrollbar {
     height: 6px;
 }
@@ -694,7 +625,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     border-radius: 3px;
 }
 
-/* == REFERENCIAS == */
+/* == REFERENCES == */
 .mt-references {
     margin: 40px auto 20px auto;
     padding: 24px;
@@ -769,14 +700,14 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     font-family: 'Inter', sans-serif;
 }
 
-/* Cabecera del reproductor */
+/* Player header */
 .mt-audio-header {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-/* Icono musical con degradado */
+/* Musicla icon */
 .mt-audio-icon {
     width: 48px;
     height: 48px;
@@ -797,7 +728,7 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     fill: none;
 }
 
-/* Textos informativos */
+/* Informational texts */
 .mt-audio-info {
     display: flex;
     flex-direction: column;
@@ -817,7 +748,6 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     font-weight: 500;
 }
 
-/* Estilización del elemento <audio> nativo de HTML5 */
 .mt-audio-player audio {
     width: 100%;
     height: 40px;
@@ -825,81 +755,60 @@ body.dark-mode .mt-alert-warning .mt-alert-content b,
     outline: none;
 }
 
-/* == LAZY YOUTUBE == */
-/* REPRODUCTOR DE VIDEOS YOUTUBE (MEJORADO) */
+/* == LAZY YOUTUBE (EXPERIMENTAL) == */
 .mt-video-lazy {
-  margin: 35px 0 !important;
-  background: #f2f2f2 !important; /* Fondo del marco en modo claro */
-  padding: 10px !important;
-  border-radius: 24px !important;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03) !important;
+  margin: 35px 0;
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
 }
 
 .mt-video-cover {
-  position: relative !important;
-  padding-bottom: 56.25% !important; /* Proporción 16:9 ideal */
-  height: 0 !important;
-  overflow: hidden !important;
-  border-radius: 20px !important;
-  background-color: #000000 !important;
-  cursor: pointer !important;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #000000;
+  cursor: pointer;
 }
 
-/* Centrado absoluto e impecable de la imagen miniatura */
 .mt-video-img {
-  position: absolute !important;
-  inset: 0 !important; /* reemplaza top, left, width y height */
-  object-fit: cover !important;
-  object-position: center !important;
-  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1) !important;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* Efecto de zoom suave al pasar el cursor sobre el contenedor */
-.mt-video-cover:hover .mt-video-img {
-  transform: scale(1.04) !important;
-}
-
-/* Botón de reproducción circular flotante */
+/* Play button */
 .mt-video-play-btn {
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  width: 72px !important;
-  height: 72px !important;
-  background: #ffffff !important;
-  border-radius: 50% !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  z-index: 2 !important;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.3s, box-shadow 0.3s !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.3s, box-shadow 0.3s;
 }
 
-/* Icono de reproducción con ajuste óptico hacia la izquierda */
 .mt-video-play-btn svg,
 .mt-video-play-btn .i {
-  width: 24px !important;
-  height: 24px !important;
-  fill: #1684FF !important; /* Color primario azul */
-  stroke: #1684FF !important;
-  stroke-width: 2px !important;
-  margin-left: 2px !important; /* Movido levemente a la izquierda para un balance visual perfecto */
-  transition: transform 0.3s ease, fill 0.3s ease, stroke 0.3s ease !important;
-}
-
-/* Interacciones premium al pasar el cursor */
-.mt-video-cover:hover .mt-video-play-btn {
-  transform: translate(-50%, -50%) scale(1.1) !important;
-  background-color: #1684FF !important; /* Cambia a azul al hacer hover */
-  box-shadow: 0 15px 30px rgba(22, 132, 255, 0.3) !important;
-}
-
-.mt-video-cover:hover .mt-video-play-btn svg {
-  fill: #ffffff !important; /* Icono cambia a blanco */
-  stroke: #ffffff !important;
-  transform: scale(1.05) !important;
+  width: 24px;
+  height: 24px;
+  fill: #1684FF;
+  stroke: #1684FF;
+  stroke-width: 2px;
+  margin-left: 2px;
+  transition: transform 0.3s ease, fill 0.3s ease, stroke 0.3s ease;
 }
 
 /* == VIDSTACK == */
